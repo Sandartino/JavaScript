@@ -2,6 +2,7 @@
 //The frequency is calculated by the formula appearances / N and is expressed in percentages with exactly 2 digits after the decimal point. 
 //The card faces with their frequency should be printed in the order of the card face's first appearance in the input. 
 //The same card can appear multiple times in the input, but its face should be listed only once in the output. 
+
 function findCardFrequency(str) {
     //Remove empty spaces,zeros and split to array.
     var r = /[^\b\w\)]/gi;
