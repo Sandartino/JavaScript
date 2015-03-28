@@ -34,7 +34,7 @@ function findCardFrequency(str) {
         }
     });
     //......................................................
-    //Synchronize arr and arrObjects indexes for print order;
+    //Synchronize arr and arrObjects indices for print order;
     var arrIndexFixerForPrint = []
     for (var i = 0; i < arr.length; i++) {
         for (var k = 0; k < arrObjects.length; k++) {
