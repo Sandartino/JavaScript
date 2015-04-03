@@ -29,11 +29,11 @@ function findCardFrequency(str) {
             case "Q": arrObjects[10]["prop"] = element; arrObjects[10]["count"] = ++queen; break;
             case "K": arrObjects[11]["prop"] = element; arrObjects[11]["count"] = ++king; break;
             case "A": arrObjects[12]["prop"] = element; arrObjects[12]["count"] = ++ace; break;
-            default: console.log("Error in source code or invalid input"); break
+            default: console.log("Error in source code or invalid input"); break;
         }
     });
     //Synchronize arr and arrObjects indices for print order;
-    var arrIndexFixerForPrint = []
+    var arrIndexFixerForPrint = [];
     for (var i = 0; i < arr.length; i++) {
         for (var k = 0; k < arrObjects.length; k++) {
             if (arr[i] === arrObjects[k].prop) {
@@ -52,13 +52,13 @@ function findCardFrequency(str) {
         var decimalFix = percentage.toFixed(2);
     //Print    
         if (arrIndexFixerForPrint[i].prop === "1") {
-            console.log("10" + "->" + decimalFix + "%")
+            console.log("10" + "->" + decimalFix + "%");
         }
         else {
             console.log(arrIndexFixerForPrint[i].prop + "->" + decimalFix + "%");
         }
     }
-    console.log("---------")
+    console.log("---------");
 }
 findCardFrequency('8♥ 2♣ 4♦ 10♦ J♥ A♠ K♦ 10♥ K♠ K♦');
 findCardFrequency('J♥ 2♣ 2♦ 2♥ 2♦ 2♠ 2♦ J♥ 2♠');
