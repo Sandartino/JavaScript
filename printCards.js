@@ -8,8 +8,8 @@ function findCardFrequency(str) {
     var r = /[^\b\w\)]/gi;
     var r2 = /0/g;
     var isolateSpaces = str.replace(r, '');
-    var noZero = isolateSpaces.replace(r2, '')
-    var arr = noZero.split('')
+    var noZero = isolateSpaces.replace(r2, '');
+    var arr = noZero.split('');
     var percentage = 0;
     //Filling up objects in "arrObjects"
     var arrObjects = [{},{},{},{},{},{},{},{},{},{},{},{},{}]
