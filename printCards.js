@@ -58,7 +58,7 @@ function findCardFrequency(str) {
             console.log(arrIndexFixerForPrint[i].prop + "->" + decimalFix + "%");
         }
     }
-    console.log("---------");
+    console.log("----------");
 }
 findCardFrequency('8♥ 2♣ 4♦ 10♦ J♥ A♠ K♦ 10♥ K♠ K♦');
 findCardFrequency('J♥ 2♣ 2♦ 2♥ 2♦ 2♠ 2♦ J♥ 2♠');
