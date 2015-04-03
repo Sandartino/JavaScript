@@ -12,7 +12,7 @@ function findCardFrequency(str) {
     var arr = noZero.split('');
     var percentage = 0;
     //Filling up objects in "arrObjects"
-    var arrObjects = [{},{},{},{},{},{},{},{},{},{},{},{},{}]
+    var arrObjects = [{},{},{},{},{},{},{},{},{},{},{},{},{}];
     var two = 0, three = 0, four = 0, five = 0, six = 0, seven = 0; eight = 0, nine = 0, one = 0; jack = 0; queen = 0; king = 0; ace = 0;
     arr.forEach(function (element, index) {
         switch (element) {
