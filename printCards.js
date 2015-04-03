@@ -29,7 +29,7 @@ function findCardFrequency(str) {
             case "Q": arrObjects[10]["prop"] = element; arrObjects[10]["count"] = ++queen; break;
             case "K": arrObjects[11]["prop"] = element; arrObjects[11]["count"] = ++king; break;
             case "A": arrObjects[12]["prop"] = element; arrObjects[12]["count"] = ++ace; break;
-            default: console.log("Error in source code or invalid input"); break;
+            default: console.log("Invalid input"); break;
         }
     });
     //Synchronize arr and arrObjects indices for print order;
