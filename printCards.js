@@ -11,7 +11,6 @@ function findCardFrequency(str) {
     var noZero = isolateSpaces.replace(r2, '')
     var arr = noZero.split('')
     var percentage = 0;
-    //...............................................
     //Filling up objects in "arrObjects"
     var arrObjects = [{},{},{},{},{},{},{},{},{},{},{},{},{}]
     var two = 0, three = 0, four = 0, five = 0, six = 0, seven = 0; eight = 0, nine = 0, one = 0; jack = 0; queen = 0; king = 0; ace = 0;
@@ -33,7 +32,6 @@ function findCardFrequency(str) {
             default: console.log("Error in source code or invalid input"); break
         }
     });
-    //......................................................
     //Synchronize arr and arrObjects indices for print order;
     var arrIndexFixerForPrint = []
     for (var i = 0; i < arr.length; i++) {
@@ -44,7 +42,6 @@ function findCardFrequency(str) {
             }
         }
     }
-    //...................................................
     // Just calculate percentages
     for (var i = 0; i < arrIndexFixerForPrint.length; i++) {
         percentage = arrIndexFixerForPrint[i].count;
@@ -53,7 +50,6 @@ function findCardFrequency(str) {
         }
         percentage = (percentage / arr.length) * 100;
         var decimalFix = percentage.toFixed(2);
-    //....................................................
     //Print    
         if (arrIndexFixerForPrint[i].prop === "1") {
             console.log("10" + "->" + decimalFix + "%")
@@ -63,7 +59,6 @@ function findCardFrequency(str) {
         }
     }
     console.log("---------")
-    //...................................................
 }
 findCardFrequency('8♥ 2♣ 4♦ 10♦ J♥ A♠ K♦ 10♥ K♠ K♦');
 findCardFrequency('J♥ 2♣ 2♦ 2♥ 2♦ 2♠ 2♦ J♥ 2♠');
