@@ -4,14 +4,12 @@
 //The same card can appear multiple times in the input, but its face should be listed only once in the output. 
 
 function findCardFrequency(str) {
-    //Remove empty spaces,zeros and split to array.
     var r = /[^\b\w\)]/gi;
     var r2 = /0/g;
     var isolateSpaces = str.replace(r, '');
     var noZero = isolateSpaces.replace(r2, '');
     var arr = noZero.split('');
     var percentage = 0;
-    //Filling up objects in "arrObjects"
     var arrObjects = [{},{},{},{},{},{},{},{},{},{},{},{},{}];
     var two = 0, three = 0, four = 0, five = 0, six = 0, seven = 0; eight = 0, nine = 0, one = 0; jack = 0; queen = 0; king = 0; ace = 0;
     arr.forEach(function (element, index) {
@@ -42,7 +40,7 @@ function findCardFrequency(str) {
             }
         }
     }
-    // Just calculate percentages
+   
     for (var i = 0; i < arrIndexFixerForPrint.length; i++) {
         percentage = arrIndexFixerForPrint[i].count;
         if (percentage == undefined) {
@@ -50,7 +48,7 @@ function findCardFrequency(str) {
         }
         percentage = (percentage / arr.length) * 100;
         var decimalFix = percentage.toFixed(2);
-    //Print    
+    
         if (arrIndexFixerForPrint[i].prop === "1") {
             console.log("10" + "->" + decimalFix + "%");
         }
